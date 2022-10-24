@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="trabalho.css">
+    
+    <title>Decodificador</title>
+</head>
+<body>
+    <div class="corpo">
+        <form>
+            <div><br>
+                <label for="insercao">Digite a sua Mensagem </label><br><br>
+                <textarea cols="35" rows="5" type="text" id="escrever" required></textarea><br>
+                
+            </div>
+            <div>
+                Escolha o codificador
+                <select name="selecione" class="select" id="selecione">
+                    <option value="cesar">Cifra de cesar</option>
+                    <option value="base">Base 64</option>
+                </select>
+
+            </div>
+            <br>
+           <div class="chave">
+                <input type="number" id="keybox">
+            </div>
+
+            <div id="Traducao"><br>
+                <input type="radio" id="radio-codificar"  name="Codificações" value="Codificar"
+                    checked>
+                <label for="codificar">Codificar</label>
+                <input type="radio" id="radio-decodificar"  name="Codificações" value="Codificar">
+                <label for="Codificar">Decodificar</label>
+                <br>
+                
+            </div>
+        </form>
+
+        <div>
+            <button id="botao" class="">Nova Mensagem</button><br>
+            <button  class="botão">Resultado</button><br>
+            <p id="Traducao">Resultado </p>
+            <textarea cols="45" rows="7" type="text" id="resultado"></textarea><br>
+        </div>
+        
+        
+        <script src="trabalho.js"></script>
+
+    </body>
